@@ -125,6 +125,17 @@ ul.navbar-nav .nav-item .nav-link {
 	margin-bottom: 0;
 }
 
+.notFound__wrapper .jumbotron {
+	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.06),
+	0px 6px 10px 0px rgba(0, 0, 0, 0.042), 0px 1px 18px 0px rgba(0, 0, 0, 0.036);
+	border-radius: 8px;
+	padding: 2em 0;
+	text-align: center;
+}
+.notFound__wrapper .jumbotron .not_foundPageLogo {
+	max-width: 50%;
+}
+
 .spinner__wrapper {
 	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.06),
 	0px 6px 10px 0px rgba(0, 0, 0, 0.042), 0px 1px 18px 0px rgba(0, 0, 0, 0.036);
@@ -137,7 +148,7 @@ ul.navbar-nav .nav-item .nav-link {
 .notFound__wrapper .jumbotron {
 	background-color: #ffffff;
 }
-.notFound__wrapper .jumbotron h3 {
+.notFound__wrapper .jumbotron p {
 	letter-spacing: 1px;
 }
 .notFound__wrapper .jumbotron a {

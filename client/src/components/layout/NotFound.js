@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
+import NotFoundImg from "../../assets/404.png";
 import { Container, Jumbotron, Button } from "reactstrap";
 
 const NotFound = () => {
@@ -8,16 +9,15 @@ const NotFound = () => {
 			<Container className="themed-container">
 				<div className="notFound__wrapper">
 					<Jumbotron>
-						<h3>AWWW...DON’T CRY.</h3>
-						<p className="lead">It's just a 404 Error!</p>
-						<hr className="my-2" />
+						<img src={NotFoundImg} className="not_foundPageLogo" alt="Not Found" />
+						<hr className="mt-3 mb-4" />
 						<p>
 							What you’re looking for may have been misplaced in Long Term
 							Memory.
 						</p>
 						<p className="lead">
 							<Button color="dark">
-								<Link to="/">BACK TO HOMEPAGE</Link>
+								<Link to="/">Back To Homepage</Link>
 							</Button>
 						</p>
 					</Jumbotron>

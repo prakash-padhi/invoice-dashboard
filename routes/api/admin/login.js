@@ -101,7 +101,7 @@ router.put(
 					mobile: req.body.mobile
 				}
 			};
-			Admin.updateOne(query, newvalues, function(err, res) {
+			Admin.updateOne(query, newvalues, function (err, res) {
 				if (err) console.log(err);
 			});
 			res.json({ successMsg: "Profile updated" });

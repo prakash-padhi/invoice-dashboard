@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 const config = require("config");
 // For Mongo Atlas Database
-//const db = config.get("mongoURI");
-// For Mongo Local Database
 const db = config.get("mongoURI");
+// For Mongo Local Database
+//const db = config.get("mongoLocalURI");
 const connectDB = async () => {
 	try {
 		await mongoose

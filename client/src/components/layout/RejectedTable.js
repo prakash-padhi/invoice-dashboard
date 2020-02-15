@@ -63,11 +63,9 @@ const RejectedTable = invoiceData => {
 															<td>₹{invData.billAmount}</td>
 															<td>{invData.rejectReason}</td>
 															<td>
-																<a href={invData.billDoc} className="bill__download--link">
-																	<Button color="primary" block outline>
-																		<FiDownload />
-																	</Button>
-																</a>
+																<Button color="primary" block outline>
+																	<FiDownload />
+																</Button>
 															</td>
 															<td className="date__table--content">
 																<Moment format="DD-MMM-YYYY">
@@ -100,7 +98,7 @@ const RejectedTable = invoiceData => {
 					<Fragment>
 						<div className="no__data--exists">
 							<img src={NoData} className="no__data--logo" alt="No Data Found" />
-							<p className="no__data--text mt-4">SORRY! NO DATA FOUND.</p>
+							<p className="no__data--text mt-4">SORRY! NO DATA FOUND</p>
 						</div>
 					</Fragment>
 				)}

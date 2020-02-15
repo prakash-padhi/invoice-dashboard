@@ -89,7 +89,7 @@ const PaidTable = invoiceData => {
 					<Fragment>
 						<div className="no__data--exists">
 							<img src={NoData} className="no__data--logo" alt="No Data Found" />
-							<p className="no__data--text mt-4">SORRY! NO DATA FOUND.</p>
+							<p className="no__data--text mt-4">SORRY! NO DATA FOUND</p>
 						</div>
 					</Fragment>
 				)}

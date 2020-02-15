@@ -1,16 +1,16 @@
 {
-	"name": "marmeto-invoice-portal",
+	"name": "Invoicely",
 	"version": "1.0.0",
-	"description": "Marmeto invoice portal",
+	"description": "Invoicely App Dashboard",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server",
 		"server": "nodemon server",
 		"client": "npm start --prefix client",
 		"dev": "concurrently \"npm run server\" \"npm run client\""
-		},
+	},
 	"keywords": [
-		"Marmeto"
+		"Invoicely App Dashboard"
 	],
 	"author": "Prakash padhi",
 	"license": "MIT",
@@ -21,13 +21,8 @@
 		"express": "^4.17.1",
 		"express-validator": "^6.3.0",
 		"gravatar": "^1.8.0",
-		"history": "^4.10.1",
 		"jsonwebtoken": "^8.5.1",
-		"moment": "^2.24.0",
 		"mongoose": "^5.7.14",
-		"react-icons": "^3.8.0",
-		"react-loader-spinner": "^3.1.5",
-		"react-moment": "^0.9.7",
 		"request": "^2.88.0"
 	},
 	"devDependencies": {
