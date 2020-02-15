@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@font-face {
+	font-family: "AliensAndCows";
+	src: local("AliensAndCows"),
+		url(assets/fonts/AliensAndCows.ttf) format("truetype");
+}
+body {
+	background-color: #e9ecef !important;
+}
+/* Header CSS */
+#navBar__wrapper {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+.brandLogo {
+	margin: 0;
+	display: inline-flex;
+	align-items: center;
+}
+.dropdown-toggle::after {
+	transition: all 0.2s ease-in-out;
+}
+.dropdown.show .dropdown-toggle::after {
+	transform: rotate(180deg);
+}
+.dropdown-menu button.dropdown-item a {
+	color: #000000;
+	text-decoration: none;
+}
+.dropdown-menu button.dropdown-item:active a {
+	color: #ffffff;
+}
+ul.navbar-nav {
+	font-family: "Poppins", sans-serif;
+}
+.navbar-collapse.show {
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+ul.navbar-nav .nav-item .nav-link {
+	color: #ffffff;
+}
+.brandName {
+	font-family: AliensAndCows;
+	margin-left: 10px;
+	font-weight: 100;
+	font-size: 40px;
+}
+.nav-item svg {
+	margin-bottom: 2px;
+}
+@media (min-width: 768px) {
+	a.navbar-brand {
+		margin: 0 20px;
+	}
+	ul.navbar-nav .nav-item {
+		margin: 0 20px;
+	}
+}
+/* Header CSS */
+
+/* Login Card CSS */
+.login__form-wrapper .card {
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.custom_header,
+.custom_footer {
+	background-color: #000000 !important;
+}
+.card_header {
+	margin: 0;
+	font-weight: 700;
+	color: #ffffff;
+}
+.card-title {
+	padding: 14px 0;
+	border-bottom: 1px dashed #ccc;
+	border-top: 1px dashed #ccc;
+	letter-spacing: 1px;
+}
+.card_title {
+	margin: 0;
+}
+.form__wrapper {
+	justify-content: center;
+}
+.login__submit svg {
+	margin-bottom: 2.5px;
+}
+@media (min-width: 768px) {
+	.card_header {
+		font-size: 36px;
+		letter-spacing: 2px;
+	}
+}
+/* Login Card CSS */
+
+/* Invoice Data Table CSS */
+.login__form-wrapper,
+.invoiceData__wrapper,
+.userData__wrapper,
+.analyticsData__wrapper,
+.notFound__wrapper {
+	padding: 40px 0;
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+}
+.invoiceData__wrapper .table-responsive {
+	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.06),
+		0px 6px 10px 0px rgba(0, 0, 0, 0.042), 0px 1px 18px 0px rgba(0, 0, 0, 0.036);
+	background: #fff;
+	border-radius: 8px;
+	margin-bottom: 2em;
+}
+.analyticsData__wrapper .table-responsive {
+	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.06),
+		0px 6px 10px 0px rgba(0, 0, 0, 0.042), 0px 1px 18px 0px rgba(0, 0, 0, 0.036);
+	background: #fff;
+	border-radius: 8px;
+	margin-bottom: 2em;
+}
+.analyticsData__wrapper .table-responsive #invoiceTable {
+	margin-bottom: 0;
+}
+
+.spinner__wrapper {
+	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.06),
+	0px 6px 10px 0px rgba(0, 0, 0, 0.042), 0px 1px 18px 0px rgba(0, 0, 0, 0.036);
+	border-radius: 8px;
+}
+.invoiceData__wrapper #invoiceTable {
+	margin-bottom: 0;
+	border-radius: 8px;
+}
+.notFound__wrapper .jumbotron {
+	background-color: #ffffff;
+}
+.notFound__wrapper .jumbotron h3 {
+	letter-spacing: 1px;
+}
+.notFound__wrapper .jumbotron a {
+	color: #ffffff;
+	text-decoration: none;
+}
+.table-bordered td,
+.table-bordered th {
+	text-align: center;
+	vertical-align: middle !important;
+}
+#invoiceTable td.date__table--content {
+	min-width: 115px;
+}
+#invoiceTable td.action__table--content .accept__reject {
+	display: flex;
+	justify-content: space-evenly;
+}
+#invoiceTable td.action__table--content .accept__btn {
+	margin-right: 3px;
+}
+#invoiceTable td.action__table--content .reject__btn {
+	margin-left: 3px;
+}
+.popover-body {
+	font-family: "Poppins", sans-serif;
+}
+.pagination {
+	justify-content: center;
+}
+/* Invoice Data Table CSS */
+
+/* Analytics Data CSS */
+.analyticsData__wrapper ul.nav-tabs li.nav-item {
+	width: 33.3333%;
+	text-align: center;
+	cursor: pointer;
+}
+.analyticsData__wrapper ul.nav-tabs li.nav-item {
+	font-weight: 500;
+}
+.analyticsData__wrapper ul.nav-tabs li.nav-item a.nav-link {
+	padding: 0.8rem;
+	border: unset;
+	transition: background-color 0.1s ease-in-out;
+}
+.analyticsData__wrapper ul.nav-tabs li.nav-item a.nav-link:hover {
+	border-color: transparent;
+}
+.analyticsData__wrapper ul.nav-tabs li.nav-item a.nav-link.active {
+	border-bottom: 2px solid green;
+	color: green;
+}
+.analyticsData__wrapper .paid__btn {
+	display: flex;
+	align-items: center;
+}
+.analyticsData__wrapper .paid__btn svg {
+	margin-right: 2px;
+}
+.analyticsData__wrapper .no__data--exists {
+	text-align: center;
+	padding: 40px 0;
+}
+.analyticsData__wrapper .no__data--exists .no__data--logo {
+	max-width: 150px;
+}
+.analyticsData__wrapper .no__data--exists .no__data--text {
+	letter-spacing: 2px;
+}
+/* Analytics Data CSS */
+
+/* User Data CSS */
+.accountData__wrapper {
+	margin: 40px 0;
+	padding: 40px 0;
+	background-color: #ffffff;
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.06),
+	0px 6px 10px 0px rgba(0, 0, 0, 0.042), 0px 1px 18px 0px rgba(0, 0, 0, 0.036);
+	border-radius: 8px;
+}
+.accountData__wrapper .width__separtor {
+	max-width: 60%;
+}
+@media (max-width: 480px) {
+	.accountData__wrapper .width__separtor {
+		max-width: 90%;
+	}
+}
+.accountData__wrapper .account__image--logo {
+	max-width: 120px;
+}
+.accountData__wrapper .overlay__wrapper {
+	display: inline-block;
+	box-shadow: 0 0 16px 4px rgba(241, 241, 241, 0.7490196078431373);
+}
+
+.accountData__wrapper .addAdmin__logo {
+	max-width: 120px;
+}
+/* User Data CSS */
