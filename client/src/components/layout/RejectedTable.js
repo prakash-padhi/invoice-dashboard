@@ -63,9 +63,11 @@ const RejectedTable = invoiceData => {
 															<td>₹{invData.billAmount}</td>
 															<td>{invData.rejectReason}</td>
 															<td>
-																<Button color="primary" block outline>
-																	<FiDownload />
-																</Button>
+																<a href={invData.billDoc} className="bill__download--link">
+																	<Button color="primary" block outline>
+																		<FiDownload />
+																	</Button>
+																</a>
 															</td>
 															<td className="date__table--content">
 																<Moment format="DD-MMM-YYYY">
