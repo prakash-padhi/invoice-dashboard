@@ -72,10 +72,9 @@ const MyNavbar = ({ auth: { isAuthenticated, loading, user }, logout }) => {
 			</Nav>
 		</Collapse>
 	);
-
 	return (
 		<div id="navBar__wrapper">
-			<Navbar color="dark" dark expand="md">
+			<Navbar className={!loading ? !isAuthenticated ? "justify-content-center" : "" : ""} color="dark" dark expand="md">
 				<NavbarBrand href="/">
 					<p className="brandLogo">
 						<img src={logo} id="brandLogoImg" alt="Brand Logo" />
