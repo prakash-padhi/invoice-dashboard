@@ -148,7 +148,7 @@ const Analytics = ({
 				<div className="analyticsData__wrapper">
 					{!loading ? (
 						<Fragment>
-							<Nav tabs className="mb-4">
+							<Nav tabs>
 								<NavItem className="m-0">
 									<NavLink
 										className={classnames({ active: activeTab === "1" })}

@@ -1,11 +1,26 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
 @font-face {
 	font-family: "AliensAndCows";
 	src: local("AliensAndCows"),
 		url(assets/fonts/AliensAndCows.ttf) format("truetype");
 }
+@font-face {
+	font-family: "Invoicely400";
+	src: local("Invoicely400"),
+		url(assets/fonts/Invoicely400.woff2) format("woff2");
+}
+@font-face {
+	font-family: "Invoicely500";
+	src: local("Invoicely500"),
+		url(assets/fonts/Invoicely500.woff2) format("woff2");
+}
 body {
+	font-family: "Invoicely400";
 	background-color: #e9ecef !important;
+}
+body .tooltip .tooltip-inner {
+	font-family: "Invoicely500";
+	letter-spacing: 0.5px;
 }
 /* Header CSS */
 #navBar__wrapper {
@@ -20,6 +35,7 @@ body {
 }
 .dropdown-toggle::after {
 	transition: all 0.2s ease-in-out;
+	vertical-align: 0.155em;
 }
 .dropdown.show .dropdown-toggle::after {
 	transform: rotate(180deg);
@@ -32,7 +48,7 @@ body {
 	color: #ffffff;
 }
 ul.navbar-nav {
-	font-family: "Poppins", sans-serif;
+	font-family: "Invoicely400";
 }
 .navbar-collapse.show {
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -73,15 +89,19 @@ ul.navbar-nav .nav-item .nav-link {
 	margin: 0;
 	font-weight: 700;
 	color: #ffffff;
+	letter-spacing: 2px;
 }
 .card-title {
-	padding: 14px 0;
-	border-bottom: 1px dashed #ccc;
-	border-top: 1px dashed #ccc;
+	padding: 0;
 	letter-spacing: 1px;
 }
+
 .card_title {
 	margin: 0;
+	display: inline-block;
+	padding: 10px 20px;
+	border: 1px dashed #ccc;
+	font-family: "Invoicely500";
 }
 .form__wrapper {
 	justify-content: center;
@@ -89,22 +109,33 @@ ul.navbar-nav .nav-item .nav-link {
 .login__submit svg {
 	margin-bottom: 2.5px;
 }
+.login__form-wrapper .card-footer {padding: .26rem 1.25rem;}
+#footerLogo {max-width:  40px;}
 @media (min-width: 768px) {
 	.card_header {
 		font-size: 36px;
-		letter-spacing: 2px;
 	}
+	#footerLogo {max-width:  50px;}
+	.login__form-wrapper .card-footer {padding: .55rem 1.25rem;}
 }
 /* Login Card CSS */
+
+.analyticsData__wrapper {
+	margin: 40px 0;
+	font-family: "Invoicely400";
+	font-size: 14px;
+	background-color: #ffffff;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.06), 0px 6px 10px 0px rgba(0, 0, 0, 0.042), 0px 1px 18px 0px rgba(0, 0, 0, 0.036);
+    border-radius: 8px;
+}
 
 /* Invoice Data Table CSS */
 .login__form-wrapper,
 .invoiceData__wrapper,
 .userData__wrapper,
-.analyticsData__wrapper,
 .notFound__wrapper {
 	padding: 40px 0;
-	font-family: "Poppins", sans-serif;
+	font-family: "Invoicely400";
 	font-size: 14px;
 }
 .invoiceData__wrapper .table-responsive {
@@ -115,10 +146,6 @@ ul.navbar-nav .nav-item .nav-link {
 	margin-bottom: 2em;
 }
 .analyticsData__wrapper .table-responsive {
-	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.06),
-		0px 6px 10px 0px rgba(0, 0, 0, 0.042), 0px 1px 18px 0px rgba(0, 0, 0, 0.036);
-	background: #fff;
-	border-radius: 8px;
 	margin-bottom: 2em;
 }
 .analyticsData__wrapper .table-responsive #invoiceTable {
@@ -174,7 +201,7 @@ ul.navbar-nav .nav-item .nav-link {
 	margin-left: 3px;
 }
 .popover-body {
-	font-family: "Poppins", sans-serif;
+	font-family: "Invoicely500"
 }
 .pagination {
 	justify-content: center;
@@ -182,6 +209,7 @@ ul.navbar-nav .nav-item .nav-link {
 /* Invoice Data Table CSS */
 
 /* Analytics Data CSS */
+
 .analyticsData__wrapper ul.nav-tabs li.nav-item {
 	width: 33.3333%;
 	text-align: center;
@@ -194,12 +222,13 @@ ul.navbar-nav .nav-item .nav-link {
 	padding: 0.8rem;
 	border: unset;
 	transition: background-color 0.1s ease-in-out;
+	font-family: "Invoicely500";
 }
 .analyticsData__wrapper ul.nav-tabs li.nav-item a.nav-link:hover {
 	border-color: transparent;
 }
 .analyticsData__wrapper ul.nav-tabs li.nav-item a.nav-link.active {
-	border-bottom: 2px solid green;
+	border-bottom: 1px solid green;
 	color: green;
 }
 .analyticsData__wrapper .paid__btn {
@@ -226,7 +255,7 @@ ul.navbar-nav .nav-item .nav-link {
 	margin: 40px 0;
 	padding: 40px 0;
 	background-color: #ffffff;
-	font-family: "Poppins", sans-serif;
+	font-family: "Invoicely400";
 	font-size: 14px;
 	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.06),
 	0px 6px 10px 0px rgba(0, 0, 0, 0.042), 0px 1px 18px 0px rgba(0, 0, 0, 0.036);

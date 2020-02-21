@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from "react";
 import { Redirect } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
-import logo from "../../assets/mlogo.png";
+import logo from "../../assets/logo192.png";
 import { FiLogIn } from "react-icons/fi";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
@@ -51,13 +51,13 @@ const Landing = ({ login, isAuthenticated, loading }) => {
 									<Card>
 										<CardHeader className="custom_header">
 											<h5 className="card_header text-center">
-												MARMETO INVOICE PORTAL
+												INVOICELY DASHBOARD
 											</h5>
 										</CardHeader>
 										<CardBody>
 											<Alert />
-											<CardTitle>
-												<h5 className="card_title text-center">ADMIN LOGIN</h5>
+											<CardTitle className="text-center">
+												<h5 className="card_title">Admin Login</h5>
 											</CardTitle>
 											<Row className="form__wrapper">
 												<Col lg="6" md="8">
@@ -119,8 +119,8 @@ const Landing = ({ login, isAuthenticated, loading }) => {
 							</Row>
 						</Fragment>
 					) : (
-						<Spinner />
-					)}
+							<Spinner />
+						)}
 				</div>
 			</Container>
 		</Fragment>
