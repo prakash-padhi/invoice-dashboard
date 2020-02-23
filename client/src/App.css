@@ -209,7 +209,9 @@ ul.navbar-nav .nav-item .nav-link {
 /* Invoice Data Table CSS */
 
 /* Analytics Data CSS */
-
+.analyticsData__wrapper ul.nav-tabs {
+	border-bottom: none;
+}
 .analyticsData__wrapper ul.nav-tabs li.nav-item {
 	width: 33.3333%;
 	text-align: center;
