@@ -1,0 +1,11 @@
+{
+	"mongoURI": "mongodb+srv://prakash:MyDataBase2020@cluster0-x6ggn.mongodb.net/slack-userData?retryWrites=true&w=majority",
+	"mongoLocalURI": "mongodb://localhost:27017/slack-userData",
+	"jwtSecret": "mysecretjwt",
+	"slackSecret": "slacksecret",
+	"uploaded": "2",
+	"accepted": "3",
+	"rejected": "4",
+	"hold": "5",
+	"paid": "6"
+}
