@@ -32,9 +32,6 @@
 	"eslintConfig": {
 		"extends": "react-app"
 	},
-	"devServer": {
-		"disableHostCheck": true
-	},
 	"browserslist": {
 		"production": [
 			">0.2%",
